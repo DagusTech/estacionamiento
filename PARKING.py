@@ -25,6 +25,8 @@ class Coche:
         self.color = color
         self.entrada = entrada
         self.hora = hora
+    def __str__(self):
+        return " marca: "+self.marca+" modelo: "+self.modelo+" tipo: "+self.tipo+" placas: "+self.placas+" color: "+self.color+" entrada: "+self.entrada+" hora: "+self.hora
 
 print "Parking Management System"
 print "Buen Dia"
@@ -40,7 +42,7 @@ if entrada == "1":
     coche.placas = raw_input("Ingresar placas = ")
     coche.color = raw_input("Ingresar color = ")
     coche.entrada = raw_input("Fecha de Entrada = ")
-    coche.hora = raw_input("Hora")
+    coche.hora = raw_input("Hora de Entrada = ")
     print (coche)
 else:
     print "No hay opcion para el numero indicado"
